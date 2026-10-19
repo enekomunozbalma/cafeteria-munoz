@@ -49,8 +49,56 @@
       line-height: .98;
     }
     .divider { width: 44px; height: 2px; margin: 29px auto; background: #73764f; }
+    nav {
+      margin: 0 auto 28px;
+      padding: 13px 0;
+      border-top: 1px solid #d8d0c2;
+      border-bottom: 1px solid #d8d0c2;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav a {
+      display: inline-block;
+      padding: 4px 0;
+      color: #73764f;
+      font: 700 11px/1.5 Arial, sans-serif;
+      letter-spacing: .16em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease;
+    }
+    nav a:hover, nav a:focus-visible {
+      color: #ad6247;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
     .message { margin: 0; font-size: clamp(18px, 3vw, 22px); line-height: 1.55; }
     .footer { margin: 37px 0 0; color: #73764f; }
+    .contact-footer {
+      width: min(100%, 680px);
+      margin-top: 24px;
+      padding: 22px 12px 8px;
+      border-top: 1px solid #d8d0c2;
+      color: #73764f;
+      font: 12px/1.8 Arial, sans-serif;
+    }
+    .contact-footer h2 {
+      margin: 0 0 8px;
+      color: #ad6247;
+      font: 700 11px/1.5 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .contact-footer p { margin: 3px 0; }
+    .contact-footer a { color: inherit; text-underline-offset: 3px; }
+    
   </style>
 </head>
 <body>
@@ -59,8 +107,22 @@
     <p class="eyebrow">A little something is brewing</p>
     <h1>Cafetería<br>Muñoz</h1>
     <div class="divider" aria-hidden="true"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <p class="message">Good coffee, warm food, and a place to stay awhile.<br>We’re opening soon.</p>
     <p class="footer">See you around the table</p>
   </main>
+  <footer class="contact-footer">
+    <h2>Contacto</h2>
+    <p><a href="mailto:hola@cafeteriamunoz.com">hola@cafeteriamunoz.com</a></p>
+    <p><a href="tel:+34910000000">+34 910 000 000</a></p>
+  </footer>
+  
 </body>
 </html>
