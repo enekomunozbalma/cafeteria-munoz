@@ -5,7 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5efe5">
   <title>Cafetería Muñoz — Opening Soon</title>
- 
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: #f5efe5;
+      color: #303126;
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: center;
+    }
+    main {
+      width: min(100%, 680px);
+      padding: clamp(42px, 9vw, 84px) 24px;
+      border: 1px solid #d8d0c2;
+    }
+    .icon {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 26px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #73764f;
+      border-radius: 50%;
+      color: #73764f;
+      font-size: 25px;
+    }
+    .eyebrow, .footer {
+      color: #ad6247;
+      font: 700 11px/1.5 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .eyebrow { margin: 0 0 17px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 10vw, 82px);
+      font-weight: 400;
+      letter-spacing: -.055em;
+      line-height: .98;
+    }
+    .divider { width: 44px; height: 2px; margin: 29px auto; background: #73764f; }
+    .message { margin: 0; font-size: clamp(18px, 3vw, 22px); line-height: 1.55; }
+    .footer { margin: 37px 0 0; color: #73764f; }
+  </style>
 </head>
 <body>
   <main>
